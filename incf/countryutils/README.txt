@@ -2,6 +2,19 @@
 incf.countryutils
 =================
 
+Disclaimer
+==========
+
+This code is completely copied from the source egg that is found on
+https://pypi.python.org/pypi/incf.countryutils/1.0
+The code seemed no longer maintained and the original author doesn't
+respond to email, so after looking at the license I decided to copy
+the code into this github repo and update the country data
+
+
+Description
+===========
+
 `incf.countryutils` provides a convenience API on top of
 a list of countries by continent (data_file) as found on Wikipedia_
 (a copy is included in the distribution).
