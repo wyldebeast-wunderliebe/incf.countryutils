@@ -6,7 +6,7 @@ version = '1.1'
 setup(name='incf.countryutils',
       version=version,
       description="A convenience API for transformations between different ISO 3166 country codes.",
-      long_description=open(os.path.join("incf", "countryutils", "README.txt")).read() + "\n" +
+      long_description=open("README.md").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
