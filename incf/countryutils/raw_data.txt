@@ -239,7 +239,7 @@ NA TC TCA 796 Turks and Caicos Islands
 OC TV TUV 798 Tuvalu
 AF UG UGA 800 Uganda, Republic of
 EU UA UKR 804 Ukraine
-EU MK MKD 807 Macedonia, The Republic of
+EU MK MKD 807 Macedonia, The Former Yugoslav Republic of
 AF EG EGY 818 Egypt, Arab Republic of
 EU GB GBR 826 United Kingdom of Great Britain & Northern Ireland
 EU GG GGY 831 Guernsey, Bailiwick of
