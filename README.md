@@ -1,10 +1,14 @@
-=================
 incf.countryutils
-=================
+===
+
+Disclaimer from friendly forkers
+---
+
+We decided to download this package from PyPI in 2015 because we needed to make some adjustments. We tried contacting the OP several times without success. We will accept Pull Requests. Cheers, Wyldebeast & Wunderliebe.
 
 Disclaimer
-==========
 
+---
 This code is completely copied from the source egg that is found on
 https://pypi.python.org/pypi/incf.countryutils/1.0
 The code seemed no longer maintained and the original author doesn't
@@ -13,7 +17,7 @@ the code into this github repo and update the country data
 
 
 Description
-===========
+---
 
 `incf.countryutils` provides a convenience API on top of
 a list of countries by continent (data_file) as found on Wikipedia_
@@ -63,7 +67,7 @@ Lookup by name is only supported for the simple English name:
 
 
 Continents
-==========
+---
 
 Based on the data from Wikipedia_ `incf.countryutils` allows looking 
 up the continent a country belongs to (`ctn`: continent name; 
@@ -86,7 +90,7 @@ Given a continent, one can obtain its constituent countries:
 
 
 Alternative API (OO)
-====================
+---
 
 There is an alternative, more object-oriented API based on the
 notion of `Country` and `Continent` types. On creation, a country 
@@ -136,7 +140,7 @@ a generator object returning country instances in turn:
 
 
 Related packages
-================
+---
 
 The use case driving the development of this package has been the
 wish to be able to get at a continent given a country where the 
