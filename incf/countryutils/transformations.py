@@ -5,9 +5,19 @@
 # source: ISO 3166 and
 # http://en.wikipedia.org/wiki/List_of_countries_by_continent_(data_file)
 
-import data
+from . import data
 
-import types
+
+def is_string_type(obj):
+    """Determine if the obj is a string type in a python 2 + 3 compatible way
+    
+    Accepts an object
+    Returns True if the object is a string, otherwise False.
+    """
+    try:
+        return isinstance(obj, basestring)
+    except NameError:
+        return isinstance(obj, str)
 
 def ccn_to_ccn(code):
     """Normalize the numeric country code
@@ -15,7 +25,7 @@ def ccn_to_ccn(code):
     Accepts integer and string types as input
     Returns a three digit string of the numeric code
     """
-    if not isinstance(code,types.StringTypes):
+    if is_string_type(code,):
         code = str(code)
     while len(code) < 3:
         code = '0' + code
@@ -148,7 +158,7 @@ def cca_to_ccn(code):
     elif len(code) == 3:
         return cca3_to_ccn(code)
     else:
-        raise KeyError, code
+        raise KeyError(code)
 
 def cca_to_cn(code):
     """Given the ISO 3166 two or three letter country code of the 
