@@ -7,8 +7,8 @@ Disclaimer from friendly forkers
 We decided to download this package from PyPI in 2015 because we needed to make some adjustments. We tried contacting the OP several times without success. We will accept Pull Requests. Cheers, Wyldebeast & Wunderliebe.
 
 Disclaimer
-
 ---
+
 This code is completely copied from the source egg that is found on
 https://pypi.python.org/pypi/incf.countryutils/1.0
 The code seemed no longer maintained and the original author doesn't
