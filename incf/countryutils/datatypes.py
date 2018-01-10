@@ -19,14 +19,14 @@ class Country(object):
         Raises ValueError if key is not found.
         """
 
-        if data.cn_to_ccn.has_key(key):
+        if key in data.cn_to_ccn:
             self.cn = self.name = key
             self.ccn = self.numeric = data.cn_to_ccn[key]
         else:
             try:
                 code = trafos.cc_to_ccn(key)
             except KeyError:
-                raise ValueError, "%s is o ISO country code or name" % key
+                raise ValueError("%s is o ISO country code or name" % key)
             self.ccn = self.numeric = code
             self.cn = self.name = trafos.ccn_to_cn(self.ccn)
 
@@ -55,14 +55,14 @@ class Continent(object):
 
     def __init__(self, key):
         """Infer the country from the key"""
-        if data.ctca2_to_ctn.has_key(key):
+        if key in data.ctca2_to_ctn:
             self.ctca2 = self.alpha2 = key
             self.ctn = self.name = data.ctca2_to_ctn[key]
-        elif data.ctn_to_ctca2.has_key(key):
+        elif key in data.ctn_to_ctca2:
             self.ctn = self.name = key
             self.ctca2 = self.alpha2 = data.ctn_to_ctca2[key]
         else:
-            raise ValueError, "%s is not a continent code or name" % key
+            raise ValueError("%s is not a continent code or name" % key)
 
     @property
     def countries(self):
