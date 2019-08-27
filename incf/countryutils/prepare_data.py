@@ -96,7 +96,7 @@ with open('raw_data.txt', 'r') as file_handle:
 import pprint
 
 with open('data.py', 'w') as file_handle:
-    file_handle.write('# -*- coding: utf-8 -*-')
+    file_handle.write('# -*- coding: utf-8 -*-\n\n')
     for id, mapping in mappings:
         file_handle.write("%s = %s\n\n" % (id, pprint.pformat(mapping, 4)))
 

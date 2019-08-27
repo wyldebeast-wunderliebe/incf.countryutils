@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 ctca2_to_ctn = {   'AF': 'Africa',
     'AN': 'Antarctica',
     'AS': 'Asia',
