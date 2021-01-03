@@ -74,7 +74,7 @@ with open('raw_data.txt', 'r') as file_handle:
         ctca2, cca2, cca3, ccn, fullname = token.split(None,4)
 
         if ',' in fullname:
-            cn,prefix = fullname.split(',')
+            cn,prefix = fullname.split(',', 1)
             con = ' '.join([prefix.strip(),cn])
         else:
             cn = con = fullname.strip()
