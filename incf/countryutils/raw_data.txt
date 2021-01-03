@@ -119,7 +119,7 @@ AS JO JOR 400 Jordan, Hashemite Kingdom of
 AF KE KEN 404 Kenya, Republic of
 AS KP PRK 408 Korea, Democratic People's Republic of
 AS KR KOR 410 Korea, Republic of
-EU XK XKX 900 Kosovo, Republic of
+EU XK XKX 383 Kosovo, Republic of
 AS KW KWT 414 Kuwait, State of
 AS KG KGZ 417 Kyrgyz Republic
 AS LA LAO 418 Lao People's Democratic Republic
