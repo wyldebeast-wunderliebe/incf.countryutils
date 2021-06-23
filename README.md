@@ -86,7 +86,7 @@ Continents have two letter codes as well like in:
 Given a continent, one can obtain its constituent countries:
 
  >>> transformations.ctca2_to_ccn('AN')
- ['010', '074', '260', '334', '239']
+ ['010', '074', '239', '334']
 
 
 Alternative API (OO)
@@ -130,12 +130,12 @@ which in turn has the following attributes:
 Asking a continent for its constituent countries returns
 a generator object returning country instances in turn:
 
- >>> china.continent.countries
- <generator object at 0x...>
- >>> china.continent.countries.next()
+ >>> type(china.continent.countries)
+ <class 'generator'>
+ >>> next(china.continent.countries)
  <incf.countryutils.datatypes.Country object at 0x...>
  >>> [c.name for c in china.continent.countries]
- ['Afghanistan', 'Armenia', 'Azerbaijan', 'Bahrain', ...]
+ ['Afghanistan', 'Azerbaijan', 'Bahrain', 'Bangladesh', 'Armenia', 'Bhutan', 'Brunei', 'Myanmar', 'Cambodia', 'Sri Lanka', 'China', 'Taiwan', 'Christmas Island', 'Cocos (Keeling) Islands', 'Cyprus', 'Georgia', 'Hong Kong', 'India', 'Indonesia', 'Iran', 'Iraq', 'Israel', 'Japan', 'Kazakhstan', 'Jordan', 'Korea', 'Korea', 'Kuwait', 'Kyrgyz Republic', "Lao People's Democratic Republic", 'Lebanon', 'Macao', 'Malaysia', 'Maldives', 'Mongolia', 'Oman', 'Nepal', 'Pakistan', 'Palestine', 'Philippines', 'Timor-Leste', 'Qatar', 'Russian Federation', 'Saudi Arabia', 'Singapore', 'Vietnam', 'Syrian Arab Republic', 'Tajikistan', 'Thailand', 'United Arab Emirates', 'Turkey', 'Turkmenistan', 'Egypt', 'Uzbekistan', 'Yemen', 'Disputed Territory', 'Disputed Territory']
 
 
 

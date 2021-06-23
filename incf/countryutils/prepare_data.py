@@ -69,34 +69,39 @@ mappings = [('ctca2_to_ctn', ctca2_to_ctn),
 
 # generate from the raw data
 # source: http://en.wikipedia.org/wiki/List_of_countries_by_continent_(data_file)
-with open('raw_data.txt', 'r') as file_handle:
-    for token in file_handle:
-        ctca2, cca2, cca3, ccn, fullname = token.split(None,4)
 
-        if ',' in fullname:
-            cn,prefix = fullname.split(',', 1)
-            con = ' '.join([prefix.strip(),cn])
-        else:
-            cn = con = fullname.strip()
+# FOR NOW DON'T BOTHER WITH THE RAW DATA SINCE WE ADDED OUR OWN NOT YET
+# OFFICIAL COUNTRIES IN THE data.py
 
-        # now populate the dicts
 
-        ccn_to_cca2[ccn] = cca2
-        ccn_to_cca3[ccn] = cca3
-        ccn_to_cn[ccn] = cn
-        ccn_to_con[ccn] = con
-        cn_to_ccn[cn] = ccn
-        cca3_to_ccn[cca3] = ccn
-        cca2_to_ccn[cca2] = ccn
-        ccn_to_ctca2[ccn] = ctca2
-        ctca2_to_ccn[ctca2].append(ccn)
+# with open('raw_data.txt', 'r') as file_handle:
+#     for token in file_handle:
+#         ctca2, cca2, cca3, ccn, fullname = token.split(None,4)
 
-# dump output to file
+#         if ',' in fullname:
+#             cn,prefix = fullname.split(',', 1)
+#             con = ' '.join([prefix.strip(),cn])
+#         else:
+#             cn = con = fullname.strip()
 
-import pprint
+#         # now populate the dicts
 
-with open('data.py', 'w') as file_handle:
-    file_handle.write('# -*- coding: utf-8 -*-\n\n')
-    for id, mapping in mappings:
-        file_handle.write("%s = %s\n\n" % (id, pprint.pformat(mapping, 4)))
+#         ccn_to_cca2[ccn] = cca2
+#         ccn_to_cca3[ccn] = cca3
+#         ccn_to_cn[ccn] = cn
+#         ccn_to_con[ccn] = con
+#         cn_to_ccn[cn] = ccn
+#         cca3_to_ccn[cca3] = ccn
+#         cca2_to_ccn[cca2] = ccn
+#         ccn_to_ctca2[ccn] = ctca2
+#         ctca2_to_ccn[ctca2].append(ccn)
+
+# # dump output to file
+
+# import pprint
+
+# with open('data.py', 'w') as file_handle:
+#     file_handle.write('# -*- coding: utf-8 -*-\n\n')
+#     for id, mapping in mappings:
+#         file_handle.write("%s = %s\n\n" % (id, pprint.pformat(mapping, 4)))
 

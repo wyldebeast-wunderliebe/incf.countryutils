@@ -22,6 +22,6 @@ class CcaToCcnTestCase(unittest.TestCase):
 
 def test_suite():
     suite = unittest.TestSuite()
-    suite.addTest(doctest.DocFileSuite('README.txt',
+    suite.addTest(doctest.DocFileSuite('../../README.md',
                                        optionflags=doctest.ELLIPSIS))
     return suite

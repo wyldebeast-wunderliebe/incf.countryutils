@@ -25,7 +25,7 @@ def ccn_to_ccn(code):
     Accepts integer and string types as input
     Returns a three digit string of the numeric code
     """
-    if is_string_type(code,):
+    if not is_string_type(code):
         code = str(code)
     while len(code) < 3:
         code = '0' + code
