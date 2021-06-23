@@ -2,6 +2,8 @@ Changelog
 =========
 
 1.2 - (2021-06-23)
+------------------
+
 * some extra countries added
 * fix tests
 * fix small bug
