@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.1'
+version = '1.2'
 
-setup(name='incf.countryutils',
+setup(name='incf.countryutils2',
       version=version,
       description="A convenience API for transformations between different ISO 3166 country codes.",
       long_description=open("README.md").read() + "\n" +
@@ -16,7 +16,7 @@ setup(name='incf.countryutils',
       keywords="Python 'ISO 3166' 'country codes'",
       author='Raphael Ritz',
       author_email='raphael.ritz@incf.org',
-      url='',
+      url='https://github.com/wyldebeast-wunderliebe/incf.countryutils/',
       license='BSD',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['incf'],
