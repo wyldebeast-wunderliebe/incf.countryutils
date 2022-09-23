@@ -3,7 +3,7 @@ import os
 
 version = '1.2'
 
-setup(name='incf.countryutils2',
+setup(name='incf.countryutils',
       version=version,
       description="A convenience API for transformations between different ISO 3166 country codes.",
       long_description=open("README.md").read() + "\n" +
