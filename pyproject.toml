@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "incf.countryutils"
+version = "1.2"
+description = "A convenience API for transformations between different ISO 3166 country codes."
+readme = "README.md"
+authors = [
+    { name = "Raphael Ritz", email = "raphael.ritz@incf.org" }
+]
+license = { text = "BSD" }
+keywords = ["Python", "ISO 3166", "country codes"]
+classifiers = [
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+dependencies = [
+    "setuptools"
+]
+
+[project.urls]
+Homepage = "https://github.com/wyldebeast-wunderliebe/incf.countryutils"
+
+[tool.setuptools]
+packages = ["incf.countryutils"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"incf.countryutils" = ["*"]
